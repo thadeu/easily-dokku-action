@@ -6,7 +6,7 @@ LABEL "com.github.actions.description"="Easily Dokku Deploy"
 LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="green"
 
-LABEL "repository"="https://github.com/thadeu/dokku-for-github-actions"
+LABEL "repository"="https://github.com/thadeu/easily-dokku-action"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Thadeu Esteves <tadeuu@gmail.com>"
 
