@@ -1,6 +1,6 @@
 
 name: Deploy to Dokku
-author: Thadeu Esteves
+author: tadeuu
 description: Push changes to Dokku server to automatically deploy the application.
 inputs:
   BRANCH:
