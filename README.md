@@ -25,7 +25,7 @@ jobs:
           fetch-depth: 0
 
       - name: Deploy the application
-        uses: thadeu/easily-dokku-action@1.0.7
+        uses: thadeu/easily-dokku-action@v1.0.8
         env:
           BRANCH: master
           PROJECT: project-name
