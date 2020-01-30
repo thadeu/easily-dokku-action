@@ -24,7 +24,7 @@ jobs:
 
       - name: Deploy the application
         uses: thadeu/easily-dokku-action@1.0.7
-        with:
+        env:
           BRANCH: master
           PROJECT: project-name
           OPTIONS: --force
