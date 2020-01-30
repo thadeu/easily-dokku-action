@@ -27,11 +27,11 @@ jobs:
         env:
           BRANCH: master
           PROJECT: project-name
-          OPTIONS: --force
+          FLAGS: --force
+          PORT: 22
           SSH_PRIVATE_KEY: ${{ secrets.DOKKU_PRIVATE_KEY }}
           SSH_PUBLIC_KEY: ${{ secrets.DOKKU_PUBLIC_KEY }}
           SSH_HOST: ${{ secrets.DOKKU_HOST }}
-          SSH_OPTIONS: --port 22
 ```
 
 ### Required Secrets
@@ -47,9 +47,9 @@ You'll need to provide some secrets to use the action.
 You'll need to provide some env to use the action.
 
 - **BRANCH**: Repository branch that should be used for deploy: ie, `master`, default is `master`
-- **PORT**: Your port ssh server, default is 22
 - **PROJECT**: The project is Dokku project name.
 - **FLAGS**: Your flags to git push
+- **PORT**: Your port ssh server, default is 22
 - **SSH_PRIVATE_KEY**: Your SSH private key.
 - **SSH_PUBLIC_KEY**: Your SSH public key.
 - **SSH_HOST**: The host the action will SSH to run the git push command. ie, `your.site.com`.
