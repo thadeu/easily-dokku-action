@@ -1,28 +1,6 @@
-
 name: "Easily Dokku Deploy"
 author: thadeu
 description: "Push changes to Dokku server to automatically deploy the application."
-inputs:
-  BRANCH:
-    description: Repository branch that should be used for deploy: ie, `master`
-    required: false
-    default: master
-  PROJECT:
-    description: The project is Dokku project name.
-    required: true
-  SSH_PRIVATE_KEY:
-    description: Your SSH private key.
-    required: true
-  SSH_PUBLIC_KEY:
-    descripion: Your SSH public key.
-    required: true
-  SSH_HOST:
-    description: The host the action will SSH to run the git push command. ie, `your.site.com`.
-    required: true
-    default: master
-  SSH_OPTIONS:
-    description: Your options to SSH Connection
-    required: true
 runs:
   using: docker
   image: Dockerfile
