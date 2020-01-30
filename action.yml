@@ -1,7 +1,7 @@
 
-name: Deploy to Dokku
+name: "Dokku for GitHub Actions"
 author: tadeuu
-description: Push changes to Dokku server to automatically deploy the application.
+description: "Push changes to Dokku server to automatically deploy the application."
 inputs:
   BRANCH:
     description: Repository branch that should be used for deploy: ie, `master`
