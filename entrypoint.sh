@@ -26,4 +26,4 @@ git checkout "$DEPLOY_BRANCH"
 
 echo "Running deploy to $SSH_HOST on branch $DEPLOY_BRANCH"
 
-GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${DEPLOY_PORT-22}" git push ${FLAGS} dokku@"$SSH_HOST":"$PROJECT" $DEPLOY_BRANCH:master
+GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${DEPLOY_PORT}" git push ${FLAGS} dokku@"$SSH_HOST":"$PROJECT" $DEPLOY_BRANCH:master
