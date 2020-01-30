@@ -27,10 +27,10 @@ jobs:
       - name: Deploy the application
         uses: thadeu/easily-dokku-action@v1.0.8
         env:
-          BRANCH: master
+          BRANCH: master # optional
           PROJECT: project-name
-          FLAGS: --force
-          PORT: 22
+          FLAGS: --force # optional
+          PORT: 22 # optional
           SSH_PRIVATE_KEY: ${{ secrets.DOKKU_PRIVATE_KEY }}
           SSH_PUBLIC_KEY: ${{ secrets.DOKKU_PUBLIC_KEY }}
           SSH_HOST: ${{ secrets.DOKKU_HOST }}
