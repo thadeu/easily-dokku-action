@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
   git && \
   rm -Rf /var/lib/apt/lists/*
 
+ADD LICENSE README.md /
 ADD entrypoint.sh /entrypoint.sh
+
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
