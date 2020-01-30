@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
 
       - name: Deploy the application
         uses: thadeu/easily-dokku-action@1.0.7
