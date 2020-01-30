@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Deploy the application
-        uses: thadeu/easily-dokku-action@1.0.5
+        uses: thadeu/easily-dokku-action@1.0.7
         with:
           BRANCH: master
           PROJECT: project-name
