@@ -1,6 +1,6 @@
 
 name: "Dokku for GitHub Actions"
-author: tadeuu
+author: thadeu
 description: "Push changes to Dokku server to automatically deploy the application."
 inputs:
   BRANCH:

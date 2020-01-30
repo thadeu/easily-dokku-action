@@ -8,7 +8,7 @@ LABEL "com.github.actions.color"="green"
 
 LABEL "repository"="https://github.com/thadeu/dokku-github-action"
 LABEL "homepage"="http://github.com/actions"
-LABEL "maintainer"="Thadeu Esteves <me@thadeu.org>"
+LABEL "maintainer"="Thadeu Esteves <tadeuu@gmail.com>"
 
 RUN apt-get update && apt-get install -y \
   openssh-client \
