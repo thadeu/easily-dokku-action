@@ -24,6 +24,6 @@ ssh-keyscan -t rsa "$HOST" >> "$SSH_PATH/known_hosts"
 
 git checkout "$DEPLOY_BRANCH"
 
-echo "Running deploy to $SSH_HOST on branch $DEPLOY_BRANCH"
+echo "Running deploy to $DEPLOY_BRANCH"
 
 GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${DEPLOY_PORT}" git push ${FLAGS} dokku@"$SSH_HOST":"$PROJECT" $DEPLOY_BRANCH:master
