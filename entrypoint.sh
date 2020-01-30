@@ -24,4 +24,4 @@ git checkout "$BRANCH"
 
 echo "Running deploy to $DOKKU_HOST on branch $BRANCH"
 
-GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" git push $SSH_OPTIONS dokku@"$SSH_HOST":"$PROJECT" $BRANCH:master
+GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $SSH_OPTIONS" git push $OPTIONS dokku@"$SSH_HOST":"$PROJECT" $BRANCH:master

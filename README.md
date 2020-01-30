@@ -23,14 +23,15 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Deploy the application
-        uses: thadeu/easily-dokku-action
+        uses: thadeu/easily-dokku-action@1.0.5
         with:
           BRANCH: master
           PROJECT: project-name
+          OPTIONS: --force
           SSH_PRIVATE_KEY: ${{ secrets.DOKKU_PRIVATE_KEY }}
           SSH_PUBLIC_KEY: ${{ secrets.DOKKU_PUBLIC_KEY }}
           SSH_HOST: ${{ secrets.DOKKU_HOST }}
-          SSH_OPTIONS: --force --port 22
+          SSH_OPTIONS: --port 22
 ```
 
 ### Required Secrets
@@ -51,6 +52,7 @@ You'll need to provide some env to use the action.
 - **SSH_PUBLIC_KEY**: Your SSH public key.
 - **SSH_HOST**: The host the action will SSH to run the git push command. ie, `your.site.com`.
 - **SSH_OPTIONS**: Your options to SSH Connection
+- **OPTIONS**: Your custom git options
 
 ## License
 
