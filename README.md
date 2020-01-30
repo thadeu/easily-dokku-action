@@ -46,13 +46,13 @@ You'll need to provide some secrets to use the action.
 
 You'll need to provide some env to use the action.
 
-- **BRANCH**: Repository branch that should be used for deploy: ie, `master`
+- **BRANCH**: Repository branch that should be used for deploy: ie, `master`, default is `master`
 - **PROJECT**: The project is Dokku project name.
+- **PORT**: Your port ssh server
+- **FLAGS**: Your flags to git push
 - **SSH_PRIVATE_KEY**: Your SSH private key.
 - **SSH_PUBLIC_KEY**: Your SSH public key.
 - **SSH_HOST**: The host the action will SSH to run the git push command. ie, `your.site.com`.
-- **SSH_OPTIONS**: Your options to SSH Connection
-- **OPTIONS**: Your custom git options
 
 ## License
 
