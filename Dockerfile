@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
 # Github labels
-LABEL "com.github.actions.name"="dokku-for-github-actions"
+LABEL "com.github.actions.name"="easily-dokku-action"
 LABEL "com.github.actions.description"="Easily Dokku Deploy"
 LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="green"
