@@ -5,7 +5,7 @@ description: Push changes to Dokku server to automatically deploy the applicatio
 inputs:
   BRANCH:
     description: Repository branch that should be used for deploy: ie, `master`
-    required: true
+    required: false
     default: master
   PROJECT:
     description: The project is Dokku project name.
