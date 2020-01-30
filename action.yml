@@ -1,5 +1,5 @@
 
-name: "Dokku for GitHub Actions"
+name: "Easily Dokku Deploy"
 author: thadeu
 description: "Push changes to Dokku server to automatically deploy the application."
 inputs:
